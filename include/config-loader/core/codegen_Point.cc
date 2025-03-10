@@ -4,6 +4,14 @@
 namespace codegen {
 
 /**
+ * DEFINE_SCHEMA(Point,
+              (double) x,
+              (double) y);
+              // 生成模板调用
+              // => f1(f2(double) x) => x
+              // => f3(f4(double) x) => double x
+ */
+/**
  * 模板生成样例
  */
 struct Point {
